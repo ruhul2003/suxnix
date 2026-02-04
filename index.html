@@ -4,28 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/0398fc8d82.js" crossorigin="anonymous"></script>
     <title>SUXNIX</title>
 </head>
 <body>
 
     <!------ Header Section ------->
-    <header>
-        <nav class="flex flex-row items-center justify-between px-10 mt-3">
-            <div><img src="./Images/logo_01.webp" alt="logo" class="w-40"></div>
+    <header class="relative mb-10 h-full">
+        <nav class="flex flex-row items-center justify-between px-10 mt-6">
+            <div><img src="./Images/logo_01.webp" alt="logo" class="w-40 hover:cursor-pointer"></div>
             <div class="flex flex-row items-center justify-center gap-7">
-                <ul class="flex flex-row items-center gap-6">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Ingredient</a></li>
-                    <li><a href="#">Supplement</a></li>
-                    <li><a href="#">Feature</a></li>
-                    <li><a href="#">Shop</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contacts</a></li>
-                </ul>
-
-                <button class="px-5 text-white hover:bg-[#70bd29] hover:cursor-pointer font-bold bg-[#69B122] py-3 rounded-3xl">Order Now</button>
+                <ul class="flex flex-row items-center text-[#666] gap-8 
+                max-sm:hidden md:hidden lg:flex">
+                    <li class="text-lg font-bold hover:text-[#69B122]"><a href="#">HOME</a></li>
+                    <li class="text-lg font-bold hover:text-[#69B122]"><a href="#">INGREDIENT</a></li>
+                    <li class="text-lg font-bold hover:text-[#69B122]"><a href="#">SUPPLEMENT</a></li>
+                    <li class="text-lg font-bold hover:text-[#69B122]"><a href="#">FEATURE</a></li>
+                    <li class="text-lg font-bold hover:text-[#69B122]"><a href="#">SHOP</a></li>
+                    <li class="text-lg font-bold hover:text-[#69B122]"><a href="#">NEWS</a></li>
+                    <li class="text-lg font-bold hover:text-[#69B122]"><a href="#">CONTACTS</a></li>
+                </ul> 
             </div>
+
+            <div class="flex flex-row gap-8">
+                    <i class="fa-solid fa-cart-plus text-3xl"></i>
+                    <i class="fa-solid fa-magnifying-glass text-3xl"></i>
+                </div>
         </nav>
+
+    <!------ Banner Section ------->
+    <div class="bg-[url('./Images/half-circle.webp')] bg-[position:center_115%] bg-no-repeat bg-[length:960px_478px] flex flex-col items-center justify-center pt-32 gap-5">
+        <h2 class="text-lg font-bold text-[#FAA432]">.. Increased Energy With SUXNIX ..</h2>
+        <h1 class="text-center text-6xl font-bold">Mix Protein Provided Way To <br> Growth</h1>
+        <button class="mt-6 bg-[#FAA432] text-white px-8 py-4 rounded-full hover:bg-[#5a9a1e]">ORDER NOW</button>
+
+        <img class="w-[470px] h-[380px] relative " src="./Images/banner_img.webp" alt="">
+
+        <img src="./Images/pata-gura.avif" class="absolute bottom-0 right-11" alt="">
+        <img src="./Images/gura.avif" class="absolute bottom-0 left-11" alt="">
+    </div>
+
     </header>
 </body>
 </html>
