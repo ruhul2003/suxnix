@@ -6,9 +6,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/0398fc8d82.js" crossorigin="anonymous"></script>
     <title>SUXNIX</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+<body style="font-family: 'Oswald', sans-serif;">
     <!------ Header Section ------->
     <header class="relative mb-10 h-full">
         <nav class="flex flex-row items-center justify-between px-10 mt-6">
@@ -33,17 +33,69 @@
         </nav>
 
     <!------ Banner Section ------->
-    <div class="bg-[url('./Images/half-circle.webp')] bg-[position:center_115%] bg-no-repeat bg-[length:960px_478px] flex flex-col items-center justify-center pt-32 gap-5">
-        <h2 class="text-lg font-bold text-[#FAA432]">.. Increased Energy With SUXNIX ..</h2>
-        <h1 class="text-center text-6xl font-bold">Mix Protein Provided Way To <br> Growth</h1>
-        <button class="mt-6 bg-[#FAA432] text-white px-8 py-4 rounded-full hover:bg-[#5a9a1e]">ORDER NOW</button>
+    <div class="bg-[url('./Images/half-circle.webp')] bg-[position:center_115%] bg-no-repeat bg-[length:960px_478px] max-sm:bg-[length:580px_339px] flex flex-col items-center justify-center pt-32 max-sm:pt-10 gap-5">
+        <h2 class="text-lg font-bold max-sm:text-base text-[#FAA432]">.. Increased Energy With SUXNIX ..</h2>
+        <h1 class="text-center text-6xl font-bold max-sm:text-4xl">Mix Protein Provided Way To <br> Growth</h1>
+        <button class="mt-6 bg-[#FAA432] text-white px-8 py-4 max-sm:px-6 max-sm:py-3 rounded-full hover:bg-[#5a9a1e]">ORDER NOW</button>
 
-        <img class="w-[470px] h-[380px] relative " src="./Images/banner_img.webp" alt="">
+        <img class="w-[470px] h-[380px] max-sm:w-[300px] max-sm:h-[250px] relative " src="./Images/banner_img.webp" alt="">
 
-        <img src="./Images/pata-gura.avif" class="absolute bottom-0 right-11" alt="">
-        <img src="./Images/gura.avif" class="absolute bottom-0 left-11" alt="">
+        <img src="./Images/pata-gura.avif" class="absolute bottom-0 right-11 max-lg:hidden" alt="">
+        <img src="./Images/gura.avif" class="absolute bottom-0 left-11 max-lg:hidden" alt="">
+    </div>
+    </header>
+
+    <!------ Brand Slider Title ------->
+
+    <div class="items-center flex flex-row gap-5 mb-11 justify-center mt-20">
+        <div class="w-15 h-[3px] bg-[#FAA432]"></div>
+        <h2 class="text-lg font-bold max-sm:text-base text-[#000]">Perfect Brand is Featured on</h2>
+        <div class="w-15 h-[3px] bg-[#FAA432]"></div>
     </div>
 
-    </header>
+    <!------ Brand images ------->
+
+    <div class="flex flex-row max-sm:grid max-sm:grid-cols-3 w-11/12 m-auto gap-24 mb-8 items-center justify-center max-sm:gap-10 animate-marquee overflow-hidden">
+        <img src="./Images/brand_01.png" alt="" srcset="">
+        <img src="./Images/brand_02.webp" alt="" srcset="">
+        <img src="./Images/brand_03.webp" alt="" srcset="">
+        <img src="./Images/brand_04.webp" alt="" srcset="">
+        <img src="./Images/brand_05.webp" alt="" srcset="">
+        <img src="./Images/brand_06.webp" alt="" srcset="">
+        <img src="./Images/brand_01.png" alt="" srcset="">
+        <img src="./Images/brand_02.webp" alt="" srcset="">
+        <img src="./Images/brand_03.webp" alt="" srcset="">
+    </div>
+
+
+    <!------ Guro Section ------->
+    <div class="flex flex-row items-center justify-around bg-[#0E9D4D] mt-12 pt-20 pb-20">
+        <div class="grid grid-cols-2 gap-10 max-sm:grid-cols-1">
+            <div class="w-72">
+                <i class="fa-solid fa-apple-whole text-4xl text-[#FEE431]"></i>
+                <h2 class="text-2xl font-bold text-white mt-5">Multi Fruits Flavour</h2>
+                <p class="text-white mt-3 font-sans text-lg">A thing added to something else in order to complete or enhance it.</p>
+            </div>
+            <div class="w-72">
+                <i class="fa-solid fa-plate-wheat text-4xl text-[#FEE431]"></i>
+                <h2 class="text-2xl font-bold text-white mt-5">Flower Formula</h2>
+                <p class="text-white mt-3 font-sans text-lg">A thing added to something else in order to complete or enhance it.</p>
+            </div>
+            <div class="w-72">
+                <i class="fa-solid fa-fish-fins text-4xl text-[#FEE431]"></i>
+                <h2 class="text-2xl font-bold text-white mt-5">Fishbone Diagram</h2>
+                <p class="text-white mt-3 font-sans text-lg">A thing added to something else in order to complete or enhance it.</p>
+            </div>
+            <div class="w-72">
+                <i class="fa-solid fa-flask text-4xl text-[#FEE431]"></i>
+                <h2 class="text-2xl font-bold text-white mt-5">100% Fat Blasting</h2>
+                <p class="text-white mt-3 font-sans text-lg">A thing added to something else in order to complete or enhance it.</p>
+            </div>
+            
+        </div>
+
+        <img class="max-sm:hidden" src="./Images/guro.webp" alt="">
+    </div>
+
 </body>
 </html>
